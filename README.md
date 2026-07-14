@@ -10,20 +10,17 @@
 ## 🗺️ 맞춤형 학습 로드맵 (7/15 ~ 8/7)
 
 ```mermaid
-gantt
-    title 정보처리기사 3과목 합격 로드맵
-    dateFormat  YYYY-MM-DD
-    axisFormat  %m-%d
-    
-    section 🔔 주요 일정
-    원서 접수 개시 (7/20)        :milestone, 2026-07-20, 0d
-    필기 시험일 (8/7)            :milestone, active, 2026-08-07, 0d
+graph LR
+    Step1(1단계: DB 설계 & 모델링<br>7/15 ~ 7/20) --> Step2(2단계: SQL 기본 & 활용<br>7/21 ~ 7/26)
+    Step2 --> Step3(3단계: 고급 DB & 최적화<br>7/27 ~ 8/1)
+    Step3 --> Step4(4단계: 데이터 전환 & 실전<br>8/2 ~ 8/6)
+    Step4 --> Exam((8/7 필기 시험일))
 
-    section ✍️ 학습 단계
-    1단계: DB 설계 & 모델링      :active, s1, 2026-07-15, 6d
-    2단계: SQL 기본 & 활용       :s2, after s1, 6d
-    3단계: 고급 DB & 최적화      :s3, after s2, 6d
-    4단계: 데이터 전환 & 실전    :s4, after s3, 5d
+    Reg[7/20 원서 접수 시작] -.-> Step2
+
+    style Step1 fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px
+    style Exam fill:#ffebee,stroke:#f44336,stroke-width:2px
+    style Reg fill:#fff8e1,stroke:#ffc107,stroke-width:2px
 ```
 
 ---
